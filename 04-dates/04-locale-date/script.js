@@ -11,8 +11,8 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    document.getElementById("target").innerHTML = new Date ;
 
-    // your code here
+
 
 })();
