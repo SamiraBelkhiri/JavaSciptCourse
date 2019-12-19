@@ -8,3 +8,6 @@ sorry for the inconvience
 noticed i added an extra file with math, will try to figure it out once i finished the exercises
 
 also var alert belongs to the first excercise and is not in the correct map
+
+
+removed previous repositories, this is the only one i will using now for javascript
