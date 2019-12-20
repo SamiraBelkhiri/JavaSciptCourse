@@ -11,19 +11,35 @@
 
 (function() {
 
-    var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+
+        var fruits = [
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ];
+        alert(fruits);
+        fruits.pop();
+        fruits.push("kiwi");
+        fruits.shift();
+        fruits.unshift("banaan");
+        alert(fruits);
+
+        // your code here
+
+
+    })
+
 
 })();
+
+
