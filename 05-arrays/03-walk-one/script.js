@@ -29,22 +29,13 @@
         ];
 
 
-       var counter = 0;
-        function next_word() {
-            alert( fruits [counter % fruits.length]);
-            counter += 1;
-        }
-
-        setInterval(next_word, 100);
-
-
-    })
-
-
-
-
-
 
     // your code here
+    for(let a of fruits)
+    {
+        console.log(a);
+    }
+
+        })
 
 })();
