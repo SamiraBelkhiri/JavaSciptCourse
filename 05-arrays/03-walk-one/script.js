@@ -11,20 +11,39 @@
 
 (function() {
 
-    var fruits = [
-        "apple",
-        "pear",
-        "raspberry",
-        "tomatos",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peache",
-        "grap",
-        "cherry",
-    ];
+    document.getElementById("run").addEventListener("click", function() {
+
+        var fruits = [
+            "apple",
+            "pear",
+            "raspberry",
+            "tomatos",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peache",
+            "grap",
+            "cherry",
+        ];
+
+
+       var counter = 0;
+        function next_word() {
+            alert( fruits [counter % fruits.length]);
+            counter += 1;
+        }
+
+        setInterval(next_word, 100);
+
+
+    })
+
+
+
+
+
 
     // your code here
 
