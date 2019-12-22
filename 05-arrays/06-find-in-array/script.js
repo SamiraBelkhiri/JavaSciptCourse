@@ -89,6 +89,20 @@
         },
     ];
 
+    document.getElementById("run").addEventListener("click", function () {
+
+
+            people.forEach(function (find) {
+                if (find.lastname == "Dupont" && find.firstname == "Jean"){
+                    console.log(`your email is  ${find.email}`);
+                    console.log(`your index number is ${people.indexOf(find)}`)
+                }
+            })
+
+    })();
+
+
+
     // your code here
 
 })();
