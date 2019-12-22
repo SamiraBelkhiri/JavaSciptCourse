@@ -42,8 +42,8 @@
     document.getElementById("run").addEventListener("click", function () {
 
 
-        people.forEach(function (item,index,array) {
-            console.log(item);
+        people.forEach(function (names) {
+            console.log(names.firstname, names.lastname);
 
         })
 
