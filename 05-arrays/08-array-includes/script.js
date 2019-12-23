@@ -27,5 +27,10 @@
     ];
 
     // your code here
+    if (fruits.includes("apple")){
+        console.log("yes! an apple a day keeps the doctors away");
+    }else {
+        console.log("no apples here...");
 
+    }
 })();
