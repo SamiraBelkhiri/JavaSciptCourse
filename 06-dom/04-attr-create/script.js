@@ -9,8 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
+
+
+
+    (function() {
+
+        let elementSelected = document.getElementById("source"); // selecting the element
+        let dataImg = elementSelected.getAttribute("data-image"); //getting the attribute value
+
+        let imgAttribute = document.createElement("img"); //adding new attribute
+        imgAttribute.setAttribute("src", dataImg);
+        document.getElementById("target").appendChild(imgAttribute);
+
+        elementSelected.removeAttribute("data-image"); //removing attribute
+
+    })();
     // your code here
 
-})();
+
