@@ -13,4 +13,11 @@
 
     // your code here
 
+
+    function content(divSelector, value) {
+        document.querySelector(divSelector).innerHTML = value;
+    }
+
+    content('#target',"owned");
+
 })();
