@@ -90,5 +90,19 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+
+
+
+            var age = 0;
+            for ( i = 0; i < people.length; i++) {
+
+                age = age + people[i].age;
+
+            }
+        alert(age);
+            console.log(age);
+    });
+
 
 })();
