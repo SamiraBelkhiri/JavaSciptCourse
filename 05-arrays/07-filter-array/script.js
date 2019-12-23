@@ -89,6 +89,22 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        var olderThan18 = [];
+
+        for (var i = 0; i < people.length; i++) {
+
+            if (people[i].age > 18) {
+
+                olderThan18.push(people[i].age)
+            }
+        }
+
+        console.log(olderThan18); // [34, 23, 51, 40]
+
+        // your code here
+
+    });
+
 
 })();
