@@ -11,6 +11,19 @@
 
 (function() {
 
-    // your code here
+
+        for (i=0 ; i< 5 ; i++){
+            document.getElementsByClassName("target")[i].innerHTML = "owned";
+        }
+
+
+
+
+
+
+// your code here
+
+
 
 })();
+
