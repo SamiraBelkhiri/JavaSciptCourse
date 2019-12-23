@@ -30,4 +30,13 @@
 
     // your code here
 
+
+    document.getElementById("run").addEventListener("click", function () {
+        function removeDuplicateUsingSet(arr) {
+            let unique_array = Array.from(new Set(arr));
+            return unique_array
+        }
+
+        console.log(removeDuplicateUsingSet(fruits));
+    });
 })();
