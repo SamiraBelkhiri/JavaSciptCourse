@@ -13,4 +13,7 @@
 
     // your code here
 
+    var myDiv = document.getElementById("target");
+    myDiv.innerHTML = "owned";
+
 })();
