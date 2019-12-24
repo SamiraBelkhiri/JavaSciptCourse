@@ -9,8 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+(function() {
+    var imageHover = document.getElementById("hover");
+    imageHover.addEventListener("mouseover", func, false);
+    imageHover.addEventListener("mouseout", func1, false);
+
+    var imgSource = imageHover.getAttribute("src");
+    var hoverElement = imageHover.getAttribute("data-hover");
+
+
+    function func() {
+        imageHover.setAttribute("src", hoverElement);
+    }
+
+    function func1() {
+        imageHover.setAttribute("src", imgSource);
+    }
+
 
 })();
+
+
+
+
