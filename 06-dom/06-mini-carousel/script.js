@@ -32,25 +32,37 @@
     }
 
     loadImagesInSequence(['a.png', 'b.png', 'c.png']);
-*/
+*/  var i = 0;
    document.getElementById("next").addEventListener("click", myFunction);
 
 
     function myFunction() {
 
+        var newImage = document.getElementsByTagName("img");
 
-        for (var i = 0; i < gallery.length; i++) {
+        if(i == gallery.length) {i= 0;}
 
-
-
-            var x = document.getElementById("IMG");
-
-           x.setAttribute("src", gallery[i]);
+        newImage[0].setAttribute("src", gallery[i]);
+        i++;
 
 
-        }
     }
 
+
+/*
+
+if(i == gallery.length)
+{
+    var j = 0;
+    document.getElementById(element).src = gallery[j].src;
+    break;
+}
+else
+    var j = i + 1;
+document.getElementById(element).src = gallery[j].src;
+break;
+}
+  */
     // your code here
 
 
