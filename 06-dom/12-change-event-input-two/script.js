@@ -10,25 +10,23 @@
 // You will have time to focus on it later.
 
 
-document.getElementById("pass-one").addEventListener('keydown', function() {
+document.getElementById("pass-one").addEventListener('input', function() {
   let input = document.getElementById("pass-one");
   let validInput = document.getElementById("validity");
 
 
-  function CheckPassword() {
+    let patt = new RegExp("^(?=(.*[0-9]){2,}).(?=.*[a-z]){8,}$");
 
-    let twoNumbers = new RegExp(".*[0-9].*[0-9]");
-    return(input.value.length >= 7) && (twoNumbers.test(input.value))
+
+    if (input.value.match(patt))
+    {
+        document.getElementById("validity").innerHTML="ok";
 
     }
-    if (CheckPassword()=== true){
-        validInput.innerHTML = "ok";
-
-    }else {
-        validInput.innerHTML = "not ok";
+    else
+    {
+       console.log("no")
     }
-
-
 
     });
 
