@@ -15,10 +15,10 @@ document.getElementById("pass-one").addEventListener('input', function() {
   let validInput = document.getElementById("validity");
 
 
-    let patt = new RegExp("^(?=(.*[0-9]){2,}).(?=.*[a-z]){8,}$");
+    let patroon = new RegExp("^(?=.*[A-Za-z])(?=.*\d){2,}[A-Za-z\d]{8,}$");
 
 
-    if (input.value.match(patt))
+    if (input.value.match(patroon))
     {
         document.getElementById("validity").innerHTML="ok";
 
