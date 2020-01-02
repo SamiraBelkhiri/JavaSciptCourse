@@ -9,8 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
+
 (function() {
 
-    // your code here
+document.getElementById('slider').addEventListener("click", function () {
+
+    var val = document.getElementById("slider").value ;
+    //gets the oninput value
+    document.getElementById('target').innerHTML = val;
+    //displays this value to the html page
+    console.log(val)
+
+});
+
+
+
+
+
 
 })();
