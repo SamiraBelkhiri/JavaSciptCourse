@@ -11,6 +11,21 @@
 
 (function() {
 
+
+    var i = 0;
+    var txt = document.getElementById('target').innerText; /* The text */
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    target.innerHTML = "";
+    typeWriter();
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("target").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+
     // your code here
 
 })();
