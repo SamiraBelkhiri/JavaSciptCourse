@@ -14,7 +14,7 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
-        let inputNumber = document.getElementById("number").value;
+        let randomValue = document.getElementById("number").value;
 
         let factorial = 1 ;
         let num ;
