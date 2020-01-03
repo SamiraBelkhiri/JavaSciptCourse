@@ -18,7 +18,7 @@ document.getElementById('slider').addEventListener("click", function () {
 
     var val = document.getElementById("slider").value ;
     //gets the oninput value
-    document.getElementById('target').innerHTML = val;
+    document.getElementById('target').innerHTML =0+ val;
     //displays this value to the html page
     console.log(val)
 
