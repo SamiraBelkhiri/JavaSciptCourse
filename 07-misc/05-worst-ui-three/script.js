@@ -54,8 +54,8 @@
 
     document.getElementById("fix-part-two").addEventListener("click",function () {
     clearInterval(setTails);
-    meh = (meh < 10)
-        {
+    meh = meh = document.getElementById("part-two").getAttribute("value");
+        if (meh < 10) {
     meh ="0" + meh
     }
     document.getElementById("target").innerHTML = "+" + boo + meh + sassy +bleh;
