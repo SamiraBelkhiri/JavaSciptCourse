@@ -45,6 +45,12 @@
     }
 
 
+    document.getElementById("fix-part-one").addEventListener("click", function () {
+        clearInterval(setSonic);
+        boo = document.getElementById("part-one").getAttribute("value");
+        document.getElementById('target').innerHTML = "+" +boo + meh + sassy + bleh;
+    });
+
 
     document.getElementById("fix-part-two").addEventListener("click",function () {
     clearInterval(setTails);
