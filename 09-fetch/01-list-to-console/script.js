@@ -12,7 +12,7 @@
 (() => {
 
     document.getElementById("run").addEventListener("click", function () {
-        fetch('http://example.com/movies.json')
+        fetch('http://localhost:12345/api.json')
             .then((response) => {
                 return response.json();
             })
