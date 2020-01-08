@@ -14,7 +14,7 @@
 (() => {
 document.getElementById("run").addEventListener("click", function () {
 
-    fetch("http://localhost:8083/api.json")
+    fetch("./api.json")
         .then(response => {
             return response.json()
         })
